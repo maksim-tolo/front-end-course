@@ -1,0 +1,47 @@
+* {
+	-webkit-print-color-adjust: exact;
+}
+.navigation {
+	display: none;
+}
+header {
+	display: block;
+}
+header ul, header ul+div {
+	display: none;
+}
+.line {
+	display: none;
+}
+.line-1 {
+	background: none;
+}
+.line-1 p {
+	color: black;
+}
+.line-1 > div {
+	margin-top: 0;
+}
+.line-2 {
+	background: none;
+}
+.line-2 > *{
+	float: left;
+}
+.el-1, .el-2, .el-3{
+	width: 30%;
+}
+.separator img{
+	-moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.separator {
+	margin-top: 90px;
+	width: 5%;
+}
+.line-3 {
+	display: none;
+}

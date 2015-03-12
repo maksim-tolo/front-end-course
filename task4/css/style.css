@@ -1,0 +1,157 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: arial;
+    background: #373c3f;
+}
+.wrapper, .header, .line-2, .line-3, .line-4{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.menu {
+	display: none;
+}
+.menu ul{
+	list-style: none;
+	padding: 20px 0 20px 30px;
+}
+.menu a{
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	padding: 15px;
+}
+.menu li{
+	display: inline;
+}
+.header {
+  flex: 1 100%;
+  background: #373c3f;
+}
+.header h1{
+	flex: 1 1 0px;
+	margin: 5px 20px;
+	color: white;
+	font-size: 20px;
+	font-weight: normal;
+}
+.header a{
+	display: block;
+	font-size: 40px;
+	text-align: center;
+	text-decoration: none;
+	flex: 0 0 50px;
+	color: white;
+	background: #202529;
+}
+.line-1{
+	flex: 1 100%;
+	text-decoration: none;
+	font-size: 23px;
+	color: white;
+	background: #0993ab;
+	padding: 60px 30px;
+}
+.line-1 p {
+	margin: 0;
+}
+.line-1 pre {
+	color: #b4d8e0;
+	font-size: 15px;
+}
+.line-2{
+	flex:1 100%;
+}
+.line-2 a{
+	padding: 30px 0;
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+	flex: 1 1 0px;
+	color: #9484a2;
+	background: #27212c;
+}
+.line-2 a+a{
+	color: white;
+	font-size: 15px;
+	flex:0 0 70px;
+	background: #bc3183;
+}
+.line-3{
+	flex:1 100%;
+}
+.line-3 p{
+	margin: 0;
+	padding: 0;
+}
+.line-3 a{
+	margin: 0;
+	padding: 140px 0;
+	display: block;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	flex: 1 100%;
+	color: white;
+	background: #5b0fa1;
+}
+img {
+	max-width: 100%;
+}
+.line-3 a+a{
+	padding: 0;
+	background: white;
+	line-height: 0;
+}
+.line-4{
+	flex:1 100%;
+	background: #ebebeb;
+	padding: 30px;
+}
+.line-4 h4{
+	color: #088ca5;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.text2{
+	display: none;
+}
+@media all and (min-width: 640px){
+	.header a{padding: 15px;}
+	.header h1{padding-top: 15px; font-size: 25px;}
+	.line-1 p{font-size: 40px;}
+	.line-1 pre{font-size: 25px;}
+	.line-2 a{font-size: 20px;}
+	.line-2 a+a{flex:0 0 100px; font-size: 30px;}
+	.line-3 a{padding: 300px 0; font-size: 70px;}
+	.line-4 h4{font-size: 25px;}
+	.line-4 p{font-size: 20px;}
+}
+@media all and (min-width: 980px){
+	.menu{display: block;}
+	.header{display: none;}
+	.line-1{padding: 120px 60px;}
+	.line-1 p{font-size: 50px;}
+	.line-1 pre{font-size: 30px;}
+	.line-2 a{font-size: 30px;}
+	.line-3 a { padding: 0; flex: 1 auto;}
+	.line-3 a+a {flex: 1 0px;}
+	.line-3 p{padding-top: 40%;}
+	.text2 {display: block; margin-top: 28px;}
+	.line-4 div { padding: 20px; flex:1 0px;}
+	.line-4 h4{font-size: 30px;}
+	.line-4 p{font-size: 18px;}
+}
+@media all and (min-width: 1024px){
+	.line-1 p{font-size: 70px;}
+	.line-1 pre{font-size: 40px;}
+	.line-2 a{font-size: 40px; padding: 50px 0;}
+	.line-2 a+a{flex:0 0 150px;}
+}
